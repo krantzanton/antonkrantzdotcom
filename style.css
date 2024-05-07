@@ -24,3 +24,13 @@ h2 {
 a {
   color: #f1bf19;
 }
+
+.lmao {
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .lmao {
+    flex-wrap: wrap;
+  }
+}
