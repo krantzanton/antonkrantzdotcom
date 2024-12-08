@@ -1,28 +1,36 @@
 body {
-  color: white;
-  font-family: system-ui;
-  background: rgb(30, 30, 30);
+  color: #1e1e1e;
+  font-family: Segoe UI, system-ui, -apple-system, sans-serif;
+  font-size: clamp(1rem,-0.875rem + 8.333vw, 1.5rem);
+  line-height: 1.5;
 
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 54ch;
+  margin: 0 auto;
+  padding: 1rem 20px;
 }
 
-h1 {
-  color: #fa6607;
+@media(prefers-color-scheme: dark){
+  body{
+    color: hsl(0deg 0% 70%);
+    background: hsl(216deg 28% 7%);
+  }
+  h1, h2 {
+    color: hsl(0deg 0% 85%);
+  }
 }
 
-h2 {
-  color: green
-}
 
 h1,
 h2 {
-  text-align: left;
+  line-height: 1.2;
 }
 
-a {
-  color: #f1bf19;
+a:link {
+  color: #58a6ff;
+}
+
+a:visited {
+  color: #8e96f0;
 }
 
 .lmao {
